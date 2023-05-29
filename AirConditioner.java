@@ -1,43 +1,36 @@
-	public class AirConditioner{
+		public class AirConditioner{
 	
 		private boolean isOn;
 		private String productName;
 		private int temperature;
 		
-		public AirConditioner(){
-			String name = productName;
+		public AirConditioner (String productName){
+			this.productName = productName;
 			}
-		public void decreaseTemperature(){
-			temperature = temperature;
+		public void decreaseTemperature (int decrease){
+			decrease = temperature - decrease;
 			}
-		public String getProductName(){
-			String getProductName = productName;		
+		public String getProductName(){		
 			return productName;
 			}		
 		public int getTemperature(){
-			int getTemperature = temperature;
 			return temperature;
 			}
-		public void increaseTemperature(){
-			temperature = temperature;
+		public void increaseTemperature (int increase){
+			increase = temperature + increase;
 			}
 		public boolean isOn(){
-			isOn = true;
-			isOn = false;
 			return isOn;
 			}
-		public void setOn(){
-			
+		public void setOn (boolean isOn){
+			this.isOn = isOn;
 			}
-		public String setProductName(){
-			String setProductName = productName;
-			return productName;
+		public void setProductName (String productName){
+			this.productName =  productName;
 			}
-		public int setTemperature(){
-			int setTemperature = temperature;
-			return temperature;
+		public void setTemperature (int temperature){
+			this.temperature = temperature;
 			}
 			
 			
-		}
-
+}
